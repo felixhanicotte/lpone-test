@@ -1,0 +1,206 @@
+ /* General classes for page */
+
+body {
+  background-color: rgb(250,250,250);
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-size:18px;
+}
+
+.background-grid {
+  background-image: url('../images/grid.jpg');
+}
+
+body p span {
+  font-weight: 400;
+}
+
+h2 {
+  color:#114454;
+  font-size: 35px;
+  @media (max-width: 600px) {
+    font-size:25px;
+  }
+}
+
+@media (max-width: 980px) {
+  .wrapper .lead h1 {
+    font-size: 50px;
+  }
+  .footer-mail .mail h1 {
+    font-size: 50px;
+  }
+}
+
+.constat .container {
+  width: 100%;
+}
+
+.gif img {
+    width:100%;
+  }
+
+.constat-text p span {
+  font-weight: 400;
+}
+
+/* Footer */
+
+#footer {
+  padding-top: 6em;
+}
+
+#footer a {
+  color: white;
+}
+
+#footer a:hover {
+  color: yellow;
+}
+
+.social a {
+  font-size: 24px;
+}
+
+.social a:hover {
+  text-decoration: none;
+}
+
+/* Lead with big image */
+
+.wrapper {
+  background-image: linear-gradient(135deg,
+                rgba(255, 255, 0, 0.2) 0%,
+                rgba(20, 68, 83, 0.5) 30%,
+                rgba(255, 255, 0, 0.2) 95%), url('../images/swimmer.jpg');
+  height: 750px;
+  background-size: cover;
+  padding-top: 250px;
+  text-align: center;
+  color: white;
+  font-family: 'Montserrat';
+
+}
+
+.lead h1 {
+  font-size: 70px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, .8);
+}
+
+.lead p {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, .8);
+}
+
+.lead span {
+  color:yellow;
+  font-weight: bold;
+}
+
+.footer-mail {
+  background-image: linear-gradient(135deg,
+                rgba(255, 255, 0, 0.2) 0%,
+                rgba(20, 68, 83, 0.5) 30%,
+                rgba(255, 255, 0, 0.2) 95%), url('../images/canoe.jpg');
+  height: 750px;
+  width: 100%;
+  background-size: cover;
+  padding-top: 200px;
+  text-align: center;
+  color: white;
+  font-family: 'Montserrat';
+}
+
+/* Vertical spacer to help content breathe */
+
+.vertical-spacer {
+  height: 6em;
+}
+
+.vertical-spacer-2 {
+  height: 2em;
+}
+
+.vertical-spacer-3 {
+  height: 1em;
+}
+
+/* Some padding for feature images */
+
+.feature img {
+  margin-bottom: 2em;
+}
+
+.feature {
+  color: #444444;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+/* How to override the default Bootstrap colors */
+
+.btn-primary {
+  background-color: #1abc9c;
+  border-color: #1abc9c;
+}
+
+.btn-primary:hover {
+  background-color: #16a085;
+  border-color: #16a085;
+}
+
+/* How to override the default Bootstrap navbar */
+
+.navbar-transparent {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar-transparent .navbar-brand,
+.navbar-transparent .navbar-nav > li > a {
+  color: #eeeeee;
+}
+
+.navbar-transparent .navbar-brand:hover,
+.navbar-transparent .navbar-brand:active,
+.navbar-transparent .navbar-brand:focus,
+.navbar-transparent .navbar-nav > li > a:hover,
+.navbar-transparent .navbar-nav > li > a:active,
+.navbar-transparent .navbar-nav > li > a:focus,
+.navbar-transparent .navbar-nav > .open > a,
+.navbar-transparent .navbar-nav > .open > a:hover,
+.navbar-transparent .navbar-nav > .open > a:focus {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Carousel */
+
+div#slider { width: 80%; max-width: 1000px; margin:0 auto; } 
+div#slider figure {
+  position: relative; 
+  width: 900%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  animation: 20s slidy infinite;
+}
+div#slider figure img { width: 11.11111%; height: auto; float: left; }
+div#slider { width: 80%; max-width: 800px; overflow: hidden }
+@keyframes slidy {
+  0% { left: 0%; }
+  10% { left: 0%; }
+  12.5% { left: -100%; }
+  22.5% { left: -100%; }
+  25% { left: -200%; }
+  35% { left: -200%; }
+  37.5% { left: -300%; }
+  47.5% { left: -300%; }
+  50% { left: -400%; }
+  60% { left: -400%; }
+  62.5% { left: -500%; }
+  72.5% { left: -500%; }
+  75% { left: -600%; }
+  85% { left: -600%; }
+  87.5% { left: -700%; }
+  97.5% { left: -700%; }
+  100% { left: -800%; }
+}
