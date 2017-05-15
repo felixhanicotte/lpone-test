@@ -79,7 +79,11 @@ h2 {
   text-align: center;
   color: white;
   font-family: 'Montserrat';
+  position: relative;
+}
 
+.avantages {
+    position: relative;
 }
 
 .lead h1 {
@@ -94,6 +98,25 @@ h2 {
 .lead span {
   color:yellow;
   font-weight: bold;
+}
+
+.fleche {
+  font-size: 60px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  right: 50%;
+  animation: bounce 0.7s ease infinite;
+}
+
+.fleche-bleue {
+  color: #114454;
+}
+
+@keyframes bounce{
+     from {bottom: 10px;}
+     50%  {bottom: 20px;}
+     to   {bottom: 30px;}
 }
 
 .footer-mail {
