@@ -86,6 +86,14 @@ h2 {
     position: relative;
 }
 
+.sport {
+  position:relative;
+}
+
+.fonctionnement {
+  position: relative;
+}
+
 .lead h1 {
   font-size: 70px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, .8);
@@ -109,14 +117,20 @@ h2 {
   animation: bounce 0.7s ease infinite;
 }
 
-.fleche-bleue {
+.fleche a {
+  color: white;
+  text-decoration: none;
+  text-shadow:1px 1px 3px #555;
+}
+
+.fleche-bleue a {
   color: #114454;
 }
 
 @keyframes bounce{
-     from {bottom: 10px;}
-     50%  {bottom: 20px;}
-     to   {bottom: 30px;}
+     from {bottom: 5px;}
+     50%  {bottom: 15px;}
+     to   {bottom: 25px;}
 }
 
 .footer-mail {
