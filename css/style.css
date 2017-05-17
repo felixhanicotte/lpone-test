@@ -23,6 +23,43 @@ h2 {
   }
 }
 
+#constat {
+  position: relative;
+}
+
+.constat-chiffre {
+  border-radius: 50%;
+  background-color: #114454;
+  height: 250px;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.constat-chiffre p {
+  font-size: 80px;
+  color: yellow;
+  padding-top: 70px;
+  animation-name: pulse_animation;
+  animation-duration: 5000ms;
+  transform-origin:70% 70%;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes pulse_animation {
+  0% { transform: scale(1); }
+  10% { transform: scale(1.1); }
+  20% { transform: scale(1); }
+  30% { transform: scale(1.1); }
+  40% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  60% { transform: scale(1); }
+  70% { transform: scale(1.1); }
+  80% { transform: scale(1); }
+  90% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
 @media (max-width: 980px) {
   .wrapper .lead h1 {
     font-size: 50px;
@@ -32,13 +69,9 @@ h2 {
   }
 }
 
-.constat .container {
+#chiffres {
   width: 100%;
 }
-
-.gif img {
-    width:100%;
-  }
 
 .constat-text p span {
   font-weight: 400;
@@ -75,7 +108,14 @@ h2 {
                 rgba(255, 255, 0, 0.2) 95%), url('../images/swimmer.jpg');
   height: 750px;
   background-size: cover;
-  padding-top: 250px;
+}
+
+.wrapper img {
+  width: 150px;
+  height: 150px;
+}
+.lead {
+  padding-top: 100px;
   text-align: center;
   color: white;
   font-family: 'Montserrat';
@@ -161,18 +201,6 @@ h2 {
   height: 1em;
 }
 
-/* Some padding for feature images */
-
-.feature img {
-  margin-bottom: 2em;
-}
-
-.feature {
-  color: #444444;
-  font-weight: 300;
-  letter-spacing: 1px;
-}
-
 /* How to override the default Bootstrap colors */
 
 .btn-primary {
@@ -183,30 +211,6 @@ h2 {
 .btn-primary:hover {
   background-color: #16a085;
   border-color: #16a085;
-}
-
-/* How to override the default Bootstrap navbar */
-
-.navbar-transparent {
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.navbar-transparent .navbar-brand,
-.navbar-transparent .navbar-nav > li > a {
-  color: #eeeeee;
-}
-
-.navbar-transparent .navbar-brand:hover,
-.navbar-transparent .navbar-brand:active,
-.navbar-transparent .navbar-brand:focus,
-.navbar-transparent .navbar-nav > li > a:hover,
-.navbar-transparent .navbar-nav > li > a:active,
-.navbar-transparent .navbar-nav > li > a:focus,
-.navbar-transparent .navbar-nav > .open > a,
-.navbar-transparent .navbar-nav > .open > a:hover,
-.navbar-transparent .navbar-nav > .open > a:focus {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.3);
 }
 
 /* Carousel */
@@ -241,3 +245,36 @@ div#slider { width: 80%; max-width: 800px; overflow: hidden }
   97.5% { left: -700%; }
   100% { left: -800%; }
 }
+
+.fonctionnement img {
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+}
+
+.fonctionnement h3 {
+  color: #114454;
+}
+
+.constat p span {
+  color: #E54C40;
+}
+
+.btn-lg {
+  height: 50px;
+  width: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
