@@ -48,15 +48,15 @@ h2 {
 
 @keyframes pulse_animation {
   0% { transform: scale(1); }
-  10% { transform: scale(1.1); }
+  10% { transform: scale(1.05); }
   20% { transform: scale(1); }
-  30% { transform: scale(1.1); }
+  30% { transform: scale(1.05); }
   40% { transform: scale(1); }
-  50% { transform: scale(1.1); }
+  50% { transform: scale(1.05); }
   60% { transform: scale(1); }
-  70% { transform: scale(1.1); }
+  70% { transform: scale(1.05); }
   80% { transform: scale(1); }
-  90% { transform: scale(1.1); }
+  90% { transform: scale(1.05); }
   100% { transform: scale(1); }
 }
 
@@ -79,8 +79,15 @@ h2 {
 
 /* Footer */
 
+.footer-mail {
+  position: relative;
+}
+
 #footer {
-  padding-top: 6em;
+  position: absolute;
+  bottom: 20px;
+  left: 30%;
+  right:30%;
 }
 
 #footer a {
@@ -152,8 +159,8 @@ h2 {
   font-size: 60px;
   position: absolute;
   bottom: 20px;
-  left: 50%;
-  right: 50%;
+  left: 40%;
+  right: 40%;
   animation: bounce 0.7s ease infinite;
 }
 
@@ -265,16 +272,51 @@ div#slider { width: 80%; max-width: 800px; overflow: hidden }
   width: 500px;
 }
 
+.testimonials {
+  position: relative;
+}
 
+.testimonial-card {
+  background-color: white;
+  border-radius: 5px;
+  border: 2px solid yellow;
+  width: 340px;
+  margin: 3.3em auto 0 auto;
+  position: relative;
+  padding: 3px;
+}
 
+.testimonial-card img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left:140px;
+  top: -50px;
+  border: 2px solid yellow;
+}
 
+.testimonial-text {
+  padding-top: 60px;
+  font-size: 16px;
+  text-align: center;
+}
 
+.testimonial-name {
+  font-size: 18px;
+  color: #114454;
+  padding-left: 10px;
+}
 
+.background-blue {
+  background-color: #114454;
+}
 
+.background-blue h2 {
+  color: yellow;
+}
 
-
-
-
-
+.background-blue .fleche-bleue a {
+  color: yellow;
+}
 
 
