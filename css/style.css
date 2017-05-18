@@ -115,6 +115,7 @@ h2 {
                 rgba(255, 255, 0, 0.2) 95%), url('../images/swimmer.jpg');
   height: 750px;
   background-size: cover;
+  position: relative;
 }
 
 .wrapper img {
@@ -126,7 +127,6 @@ h2 {
   text-align: center;
   color: white;
   font-family: 'Montserrat';
-  position: relative;
 }
 
 .avantages {
